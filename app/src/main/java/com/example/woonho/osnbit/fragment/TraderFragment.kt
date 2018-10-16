@@ -1,5 +1,6 @@
 package com.example.woonho.osnbit.fragment
 
+import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.app.Fragment
 import android.content.Context
@@ -34,22 +35,103 @@ class TraderFragment : Fragment() {
 
         val list = ArrayList<DataSet>()
 
-        for (i in 0 until 3) {
+        for (i in 0 until 2) {
+            DataSet().run {
+                coinNameKor = "비트코인"
+                coinNameEng = "BTC/KRW"
+                price = "6,729,000"
+                percent = "-0.31%"
+                tradeTotalCnt = "26,853백만"
+                color = 0
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "이더리움"
+                coinNameEng = "ETH/KRW"
+                price = "233,750"
+                percent = "0.64%"
+                tradeTotalCnt = "12,460백만"
+                color = 1
+                list.add(this)
+            }
             DataSet().run {
                 coinNameKor = "리플"
                 coinNameEng = "XRP/KRW"
                 price = "505"
-                percent = "6.68%"
-                tradeTotalCnt = "118.515백만"
+                percent = "0.40%"
+                tradeTotalCnt = "46,552백만"
+                color = 1
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "비트코인캐시"
+                coinNameEng = "BCH/KRW"
+                price = "510,000"
+                percent = "1.24%"
+                tradeTotalCnt = "3,030백만"
+                color = 1
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "트론"
+                coinNameEng = "TRX/KRW"
+                price = "27,30"
+                percent = "-3.19%"
+                tradeTotalCnt = "8,222백만"
+                color = 0
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "이오스"
+                coinNameEng = "EOS/KRW"
+                price = "6,045"
+                percent = "-1.47%"
+                tradeTotalCnt = "7,783백만"
+                color = 0
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "이더리움클래식"
+                coinNameEng = "ETC/KRW"
+                price = "10,910"
+                percent = "-0.64%"
+                tradeTotalCnt = "925백만"
+                color = 0
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "라이트코인"
+                coinNameEng = "LTC/KRW"
+                price = "61,330"
+                percent = "2.28%"
+                tradeTotalCnt = "252백만"
+                color = 1
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "에이다"
+                coinNameEng = "ADA/KRW"
+                price = "84,40"
+                percent = "60.68%"
+                tradeTotalCnt = "4,876백만"
+                color = 1
+                list.add(this)
+            }
+            DataSet().run {
+                coinNameKor = "블록틱스"
+                coinNameEng = "TIX/KRW"
+                price = "233"
+                percent = "-0.87%"
+                tradeTotalCnt = "4,327백만"
+                color = 0
                 list.add(this)
             }
         }
 
         val recyclerView = view.findViewById(R.id.recycler_view) as RecyclerView
         val adapter = TraderAdapter(context)
-        if (list != null) {
-            adapter.setData(list)
-        }
+
+        adapter.setData(list)
         recyclerView.adapter = adapter
         val lm = LinearLayoutManager(context)
         recyclerView.layoutManager = lm
@@ -73,13 +155,26 @@ class TraderFragment : Fragment() {
             return dataList?.size ?: 0
         }
 
+        @TargetApi(Build.VERSION_CODES.M)
+        @SuppressLint("ResourceAsColor")
         override fun onBindViewHolder(vh: ViewHolder, position: Int) {
 
-            vh.tvCoinNameEng.text = dataList!![0].coinNameEng
-            vh.tvCoinNameKor.text = dataList!![0].coinNameKor
-            vh.tvPrice.text = dataList!![0].price
-            vh.tvPercent.text = dataList!![0].percent
-            vh.tvTradeTotalCnt.text = dataList!![0].tradeTotalCnt
+            Log.d(TAG, "woonho position = $position")
+
+            vh.tvCoinNameEng.text = dataList!![position].coinNameEng
+            vh.tvCoinNameKor.text = dataList!![position].coinNameKor
+            vh.tvPrice.text = dataList!![position].price
+            vh.tvPercent.text = dataList!![position].percent
+
+            if (dataList!![position].color == 0) {
+                vh.tvPrice.setTextColor(context.getColor(R.color.blue))
+                vh.tvPercent.setTextColor(context.getColor(R.color.blue))
+            } else {
+                vh.tvPrice.setTextColor(context.getColor(R.color.red))
+                vh.tvPercent.setTextColor(context.getColor(R.color.red))
+            }
+
+            vh.tvTradeTotalCnt.text = dataList!![position].tradeTotalCnt
 
         }
 
@@ -98,5 +193,6 @@ class TraderFragment : Fragment() {
         var price: String = ""
         var percent: String = ""
         var tradeTotalCnt: String = ""
+        var color: Int = 0
     }
 }

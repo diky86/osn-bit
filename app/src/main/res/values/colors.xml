@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+<resources>]
+
+    <!-- 투명도 -->
+    <!--100% — FF-->
+    <!-- 95% — F2-->
+    <!-- 90% — E6-->
+    <!-- 85% — D9-->
+    <!-- 80% — CC-->
+    <!-- 75% — BF-->
+    <!-- 70% — B3-->
+    <!-- 65% — A6-->
+    <!-- 60% — 99-->
+    <!-- 55% — 8C-->
+    <!-- 50% — 80-->
+    <!-- 45% — 73-->
+    <!-- 40% — 66-->
+    <!-- 35% — 59-->
+    <!-- 30% — 4D-->
+    <!-- 25% — 40-->
+    <!-- 20% — 33-->
+    <!-- 15% — 26-->
+    <!-- 10% — 1A-->
+    <!--  5% — 0D-->
+    <!--  0% — 00-->
 
     <!-- 기본색 -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFF0000</color>
+    <color name="blue">#FF0000FF</color>
 
     <!-- 탭 -->
-    <color name="main_tab">#FFFFD700</color>
+    <color name="gold">#FFFFD700</color>
+    <color name="light_gold">#FFFAFAD2</color>
+    <color name="pale_gold">#FFEEE8AA</color>
+    <color name="line">#FFFAF0E6</color>
 
 </resources>
