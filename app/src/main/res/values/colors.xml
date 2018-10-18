@@ -29,6 +29,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFF0000</color>
     <color name="blue">#FF0000FF</color>
+    <color name="navy">#FF000080</color>
+
+    <!-- Black -->
+    <color name="black_50">#80000000</color>
+    <color name="gold_50">#80FFD700</color>
 
     <!-- 탭 -->
     <color name="gold">#FFFFD700</color>

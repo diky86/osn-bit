@@ -151,15 +151,12 @@ class TraderFragment : Fragment() {
         }
 
         override fun getItemCount(): Int {
-            Log.d(TAG, "woonho size = ${dataList?.size}")
             return dataList?.size ?: 0
         }
 
         @TargetApi(Build.VERSION_CODES.M)
         @SuppressLint("ResourceAsColor")
         override fun onBindViewHolder(vh: ViewHolder, position: Int) {
-
-            Log.d(TAG, "woonho position = $position")
 
             vh.tvCoinNameEng.text = dataList!![position].coinNameEng
             vh.tvCoinNameKor.text = dataList!![position].coinNameKor

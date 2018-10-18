@@ -47,7 +47,12 @@ class MainTabFragment : Fragment(), View.OnClickListener {
 
         // 투자내역
         val btnInvestHistory = v.findViewById(R.id.btn_invest_history) as TextView
-        btnInvestHistory.setOnClickListener(this)
+        btnInvestHistory.setOnClickListener {
+            val fm = fragmentManager
+            val ft = fm.beginTransaction()
+            ft.replace(R.id.fragment_layout, InvestHistoryFragment.newInstance())
+            ft.commit()
+        }
 
         // 입출금
         val btnAsset = v.findViewById(R.id.btn_asset) as TextView
@@ -65,10 +70,10 @@ class MainTabFragment : Fragment(), View.OnClickListener {
         val ft = fm.beginTransaction()
 
         when (v.tag) {
-            R.id.btn_trader -> {
-                ft.replace(R.id.fragment_layout, TraderFragment.newInstance())
-                ft.commit()
-            }
+//            R.id.btn_trader -> {
+//                ft.replace(R.id.fragment_layout, TraderFragment.newInstance())
+//                ft.commit()
+//            }
             R.id.btn_coin_info -> { ft.replace(R.id.fragment_layout, TraderFragment.newInstance()) }
             R.id.btn_invest_history -> { ft.replace(R.id.fragment_layout, TraderFragment.newInstance()) }
             R.id.btn_asset -> { ft.replace(R.id.fragment_layout, TraderFragment.newInstance()) }
