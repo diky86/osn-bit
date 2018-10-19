@@ -89,6 +89,34 @@ class AssetFragment : Fragment() {
             isReady = true
             list.add(this)
         }
+        DataSet().run {
+            coinName = "팩텀"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = true
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "헤이븐"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = true
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "지코인"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = true
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "유빅"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = true
+            list.add(this)
+        }
 
         val recyclerView = view.findViewById(R.id.recycler_view) as RecyclerView
         val adapter = AssetAdapter(context)
