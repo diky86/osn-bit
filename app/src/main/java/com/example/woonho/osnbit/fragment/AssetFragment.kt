@@ -35,42 +35,58 @@ class AssetFragment : Fragment() {
 
         DataSet().run {
             coinName = "원화"
-            price = "961,444"
+            ownCnt = "961,444"
+            priceKrw = "0 KRW"
+            isReady = false
             list.add(this)
         }
         DataSet().run {
             coinName = "비트코인"
-            price = "961,444"
+            ownCnt = "363.2352"
+            priceKrw = "1,532,235 KRW"
+            isReady = false
             list.add(this)
         }
         DataSet().run {
-            coinName = "원화"
-            price = "961,444"
+            coinName = "이더리움"
+            ownCnt = "961.2"
+            priceKrw = "235,243 KRW"
+            isReady = false
             list.add(this)
         }
         DataSet().run {
-            coinName = "원화"
-            price = "961,444"
+            coinName = "이더리움클래식"
+            ownCnt = "8111"
+            priceKrw = "8,657,456 KRW"
+            isReady = false
             list.add(this)
         }
         DataSet().run {
-            coinName = "원화"
-            price = "961,444"
+            coinName = "에이다"
+            ownCnt = "1,772.00000000"
+            priceKrw = "149,734 KRW"
+            isReady = false
             list.add(this)
         }
         DataSet().run {
-            coinName = "원화"
-            price = "961,444"
+            coinName = "가스"
+            ownCnt = "961"
+            priceKrw = "35,234 KRW"
+            isReady = false
             list.add(this)
         }
         DataSet().run {
-            coinName = "원화"
-            price = "961,444"
+            coinName = "블록틱스"
+            ownCnt = "1,123"
+            priceKrw = "13,234,353 KRW"
+            isReady = false
             list.add(this)
         }
         DataSet().run {
-            coinName = "원화"
-            price = "961,444"
+            coinName = "시프트"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = true
             list.add(this)
         }
 
@@ -99,19 +115,35 @@ class AssetFragment : Fragment() {
             return dataList?.size ?: 0
         }
 
-        override fun onBindViewHolder(p0: ItemViewHolder, p1: Int) {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-        }
+        override fun onBindViewHolder(vh: ItemViewHolder, position: Int) {
 
+            vh.tvCoinName.text = dataList!![position].coinName
+            if (dataList!![position].isReady) {
+                vh.tvReady.visibility = View.VISIBLE
+            } else {
+                vh.tvReady.visibility = View.GONE
+            }
+            vh.tvOwnCnt.text = dataList!![position].ownCnt
+            vh.tvPriceKrw.text = dataList!![position].priceKrw
+            if (position == 0) {
+                vh.tvPriceKrw.visibility = View.GONE
+            } else {
+                vh.tvPriceKrw.visibility = View.VISIBLE
+            }
+        }
 
         private inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             val tvCoinName = itemView.findViewById(R.id.tv_coin_name) as TextView
-            val tvPrice = itemView.findViewById(R.id.tv_price) as TextView
+            val tvOwnCnt = itemView.findViewById(R.id.tv_own_cnt) as TextView
+            val tvPriceKrw = itemView.findViewById(R.id.tv_price_krw) as TextView
+            val tvReady = itemView.findViewById(R.id.tv_ready) as TextView
         }
     }
 
     private class DataSet {
         var coinName = ""
-        var price = ""
+        var ownCnt = ""
+        var priceKrw = ""
+        var isReady = false
     }
 }

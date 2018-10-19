@@ -56,7 +56,12 @@ class MainTabFragment : Fragment(), View.OnClickListener {
 
         // 입출금
         val btnAsset = v.findViewById(R.id.btn_asset) as TextView
-        btnAsset.setOnClickListener(this)
+        btnAsset.setOnClickListener {
+            val fm = fragmentManager
+            val ft = fm.beginTransaction()
+            ft.replace(R.id.fragment_layout, AssetFragment.newInstance())
+            ft.commit()
+        }
 
         // 내정보
         val btnMyInfo = v.findViewById(R.id.btn_my_info) as TextView
