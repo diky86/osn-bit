@@ -17,7 +17,7 @@
             android:textStyle="bold"
             android:textColor="@color/navy"
             android:textSize="50dp"
-            android:text="OSN Bit"/>
+            android:text="BIT Flow"/>
 
         <TextView
             android:layout_width="wrap_content"

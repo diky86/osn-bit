@@ -32,8 +32,13 @@
     <color name="navy">#FF000080</color>
 
     <!-- Black -->
+    <color name="black_30">#4D000000</color>
     <color name="black_50">#80000000</color>
     <color name="gold_50">#80FFD700</color>
+    <color name="red_80">#CCFF0000</color>
+    <color name="red_10">#1AFF0000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="blue_10">#1A0000FF</color>
 
     <!-- 탭 -->
     <color name="gold">#FFFFD700</color>

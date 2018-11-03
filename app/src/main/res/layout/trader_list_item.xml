@@ -5,6 +5,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/trader_item_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -23,7 +24,7 @@
                 android:id="@+id/tv_coin_name_kor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
                 android:text="리플"/>
@@ -32,7 +33,7 @@
                 android:id="@+id/tv_coin_name_eng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
                 android:text="XRP/KRW"/>
