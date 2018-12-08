@@ -35,83 +35,90 @@ class AssetFragment : Fragment() {
 
         DataSet().run {
             coinName = "원화"
-            ownCnt = "961,444"
+            ownCnt = "142,000,000"
             priceKrw = "0 KRW"
+            isReady = false
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "빗플"
+            ownCnt = "163,024.25"
+            priceKrw = "29,661,000 KRW"
             isReady = false
             list.add(this)
         }
         DataSet().run {
             coinName = "비트코인"
-            ownCnt = "363.2352"
-            priceKrw = "1,532,235 KRW"
+            ownCnt = "12.48"
+            priceKrw = "80,510,000 KRW"
+            isReady = false
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "오피셜시그니처"
+            ownCnt = "412,781.28"
+            priceKrw = "31,829,000 KRW"
             isReady = false
             list.add(this)
         }
         DataSet().run {
             coinName = "이더리움"
-            ownCnt = "961.2"
-            priceKrw = "235,243 KRW"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
             isReady = false
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "리플"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = false
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "비트코인캐시"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = false
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "오미세고"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = false
+            list.add(this)
+        }
+        DataSet().run {
+            coinName = "트론"
+            ownCnt = "0"
+            priceKrw = "0 KRW"
+            isReady = true
             list.add(this)
         }
         DataSet().run {
             coinName = "이더리움클래식"
-            ownCnt = "8111"
-            priceKrw = "8,657,456 KRW"
-            isReady = false
-            list.add(this)
-        }
-        DataSet().run {
-            coinName = "에이다"
-            ownCnt = "1,772.00000000"
-            priceKrw = "149,734 KRW"
-            isReady = false
-            list.add(this)
-        }
-        DataSet().run {
-            coinName = "가스"
-            ownCnt = "961"
-            priceKrw = "35,234 KRW"
-            isReady = false
-            list.add(this)
-        }
-        DataSet().run {
-            coinName = "블록틱스"
-            ownCnt = "1,123"
-            priceKrw = "13,234,353 KRW"
-            isReady = false
-            list.add(this)
-        }
-        DataSet().run {
-            coinName = "시프트"
             ownCnt = "0"
             priceKrw = "0 KRW"
             isReady = true
             list.add(this)
         }
         DataSet().run {
-            coinName = "팩텀"
+            coinName = "라이트코인"
             ownCnt = "0"
             priceKrw = "0 KRW"
             isReady = true
             list.add(this)
         }
         DataSet().run {
-            coinName = "헤이븐"
+            coinName = "스텔라루멘"
             ownCnt = "0"
             priceKrw = "0 KRW"
             isReady = true
             list.add(this)
         }
         DataSet().run {
-            coinName = "지코인"
-            ownCnt = "0"
-            priceKrw = "0 KRW"
-            isReady = true
-            list.add(this)
-        }
-        DataSet().run {
-            coinName = "유빅"
+            coinName = "퀀텀"
             ownCnt = "0"
             priceKrw = "0 KRW"
             isReady = true

@@ -34,56 +34,56 @@ class InvestHistoryFragment : Fragment() {
         val list = ArrayList<DataSet>()
 
         DataSet().run {
-            coinNameKor = "에이다"
-            coinNameEng = "ADA"
-            evaluationPlusMinus = "-392,657"
-            revenuePercent = "-71.85%"
-            color = 0
-            ownCnt = "1,772.00000000"
-            evaluationPrice = "153,809"
-            buyingAvgPrice = "308"
-            buyingPrice = "546,468"
+            coinNameKor = "빗플"
+            coinNameEng = "BFT"
+            evaluationPlusMinus = "1,091,000"
+            revenuePercent = "4.00%"
+            color = 1
+            ownCnt = "163,024.25"
+            evaluationPrice = "29,661,000"
+            buyingAvgPrice = "175.25"
+            buyingPrice = "28,570,000"
             list.add(this)
         }
 
         DataSet().run {
             coinNameKor = "비트코인"
             coinNameEng = "BTC"
-            evaluationPlusMinus = "13,392,657"
-            revenuePercent = "1.85%"
+            evaluationPlusMinus = "32,010,000"
+            revenuePercent = "66.00%"
             color = 1
-            ownCnt = "234"
-            evaluationPrice = "113,153,809"
-            buyingAvgPrice = "12,000,211"
-            buyingPrice = "123,546,468"
+            ownCnt = "12.48"
+            evaluationPrice = "80,510,000"
+            buyingAvgPrice = "3,885,000"
+            buyingPrice = "48,500,000"
             list.add(this)
         }
 
         DataSet().run {
-            coinNameKor = "이오스"
-            coinNameEng = "EOS"
-            evaluationPlusMinus = "-1,232,657"
-            revenuePercent = "-51%"
-            color = 0
-            ownCnt = "1,211"
-            evaluationPrice = "12,133,859"
-            buyingAvgPrice = "11,234,865"
-            buyingPrice = "12,536,777"
+            coinNameKor = "오피셜시그니처"
+            coinNameEng = "OSN"
+            evaluationPlusMinus = "8,899,000"
+            revenuePercent = "39%"
+            color = 1
+            ownCnt = "412,781.28"
+            evaluationPrice = "31,829,000"
+            buyingAvgPrice = "55.55"
+            buyingPrice = "22,930,000"
             list.add(this)
         }
 
-        DataSet().run {
-            coinNameKor = "트론"
-            coinNameEng = "TRX"
-            evaluationPlusMinus = "-657"
-            revenuePercent = "-0.85%"
-            color = 0
-            ownCnt = "1,772,234,523"
-            evaluationPrice = "1,154,812"
-            buyingAvgPrice = "27.70"
-            buyingPrice = "546,234,134"
-            list.add(this)
-        }
+//        DataSet().run {
+//            coinNameKor = "트론"
+//            coinNameEng = "TRX"
+//            evaluationPlusMinus = "-657"
+//            revenuePercent = "-0.85%"
+//            color = 0
+//            ownCnt = "1,772,234,523"
+//            evaluationPrice = "1,154,812"
+//            buyingAvgPrice = "27.70"
+//            buyingPrice = "546,234,134"
+//            list.add(this)
+//        }
 
         val recyclerView = view.findViewById(R.id.recycler_view) as RecyclerView
         val adapter = InvestHistoryAdapter(context)

@@ -19,6 +19,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:layout_centerVertical="true"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:text="거래소"/>
@@ -64,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@+id/coin_search_container"
-        android:background="@color/gold"/>
+        android:background="@color/black"/>
 
     <!-- 총매수/총평가-->
     <LinearLayout
@@ -74,7 +75,7 @@
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
         android:layout_below="@+id/view_line"
-        android:background="@color/light_gold"
+        android:background="@color/black"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -93,7 +94,7 @@
                     android:id="@+id/tv_total_buying"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
                     android:text="총매수"/>
 
@@ -103,9 +104,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
-                    android:text="546,468"/>
+                    android:text="100,000,000"/>
 
             </RelativeLayout>
 
@@ -116,7 +117,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
                     android:text="총평가"/>
 
@@ -126,9 +127,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
-                    android:text="148,379"/>
+                    android:text="142,000,000"/>
             </RelativeLayout>
         </LinearLayout>
 
@@ -147,7 +148,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
                     android:text="평가손익"/>
 
@@ -156,9 +157,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
-                    android:text="-1546,468"/>
+                    android:text="42,000,000"/>
 
             </RelativeLayout>
 
@@ -169,7 +170,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
                     android:text="수익률"/>
 
@@ -178,9 +179,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="13dp"
-                    android:text="-94.32%"/>
+                    android:text="42.00%"/>
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
@@ -201,12 +202,13 @@
             android:id="@+id/krw_container"
             android:layout_width="50dp"
             android:layout_height="28dp"
-            android:background="@drawable/rectangle_1dp">
+            android:background="@drawable/rectangle_1dp_gray">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:textColor="@color/white"
                 android:text="KRW"/>
         </RelativeLayout>
 
@@ -215,12 +217,13 @@
             android:layout_width="50dp"
             android:layout_height="28dp"
             android:layout_toRightOf="@+id/krw_container"
-            android:background="@drawable/rectangle_1dp">
+            android:background="@drawable/rectangle_1dp_gray">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:textColor="@color/white"
                 android:text="BTC"/>
         </RelativeLayout>
 
@@ -229,12 +232,13 @@
             android:layout_width="50dp"
             android:layout_height="28dp"
             android:layout_toRightOf="@+id/btc_container"
-            android:background="@drawable/rectangle_1dp">
+            android:background="@drawable/rectangle_1dp_gray">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:textColor="@color/white"
                 android:text="KRW"/>
         </RelativeLayout>
 
@@ -243,12 +247,13 @@
             android:layout_width="50dp"
             android:layout_height="28dp"
             android:layout_toRightOf="@+id/eth_container"
-            android:background="@drawable/rectangle_1dp">
+            android:background="@drawable/rectangle_1dp_gray">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:textColor="@color/white"
                 android:text="USDT"/>
         </RelativeLayout>
 
@@ -259,10 +264,10 @@
             android:layout_centerVertical="true">
 
             <View
-                android:layout_width="15dp"
+                android:layout_width="14dp"
                 android:layout_height="15dp"
-                android:background="@drawable/circle_1dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/circle_1dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -270,6 +275,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:text="관심" />
 
         </LinearLayout>
@@ -280,16 +286,17 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@+id/exchange_select_container"
-        android:background="@color/gold"/>
+        android:background="@color/black_80"/>
 
     <!-- 정렬 -->
     <LinearLayout
         android:id="@+id/sort_container"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:layout_below="@+id/view_line2"
+        android:background="@color/black"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -299,7 +306,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.2"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="13dp"
             android:text="한글명"/>
 
@@ -310,7 +317,7 @@
             android:layout_weight="0.9"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="13dp"
             android:text="현재가"/>
 
@@ -321,7 +328,7 @@
             android:layout_weight="0.7"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="13dp"
             android:text="전일대비"/>
 
@@ -332,7 +339,7 @@
             android:layout_weight="1.2"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="13dp"
             android:text="거래대금"/>
     </LinearLayout>
@@ -342,7 +349,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@+id/sort_container"
-        android:background="@color/pale_gold"/>
+        android:background="@color/black_80"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"

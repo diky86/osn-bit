@@ -43,176 +43,167 @@ class TraderFragment : Fragment() {
         val list = ArrayList<DataSet>()
 
         DataSet().run {
+            coinNameKor = "빗플"
+            coinNameEng = "BFT/KRW"
+            price = "175"
+            percent = "7.77%"
+            tradeTotalCnt = "117,262백만"
+            color = 1
+            list.add(this)
+        }
+        DataSet().run {
+            coinNameKor = "오피셜시그니처"
+            coinNameEng = "OSN/KRW"
+            price = "55.5"
+            percent = "50.44%"
+            tradeTotalCnt = "551,262백만"
+            color = 1
+            list.add(this)
+        }
+        DataSet().run {
             coinNameKor = "비트코인"
             coinNameEng = "BTC/KRW"
-            price = "6,729,000"
-            percent = "-0.31%"
-            tradeTotalCnt = "26,853백만"
-            color = 0
+            price = "3,885,000"
+            percent = "0.44%"
+            tradeTotalCnt = "44,262백만"
+            color = 1
             list.add(this)
         }
         DataSet().run {
             coinNameKor = "이더리움"
             coinNameEng = "ETH/KRW"
-            price = "233,750"
-            percent = "0.64%"
-            tradeTotalCnt = "12,460백만"
-            color = 1
+            price = "104,450"
+            percent = "-1.09%"
+            tradeTotalCnt = "19,987백만"
+            color = 0
             list.add(this)
         }
         DataSet().run {
             coinNameKor = "리플"
             coinNameEng = "XRP/KRW"
-            price = "505"
-            percent = "0.40%"
-            tradeTotalCnt = "46,552백만"
+            price = "349"
+            percent = "2.05%"
+            tradeTotalCnt = "26,616백만"
             color = 1
             list.add(this)
         }
         DataSet().run {
             coinNameKor = "비트코인캐시"
             coinNameEng = "BCH/KRW"
-            price = "510,000"
-            percent = "1.24%"
-            tradeTotalCnt = "3,030백만"
-            color = 1
+            price = "118,150"
+            percent = "-1.87%"
+            tradeTotalCnt = "22,446백만"
+            color = 0
             list.add(this)
         }
         DataSet().run {
             coinNameKor = "오미세고"
-            coinNameEng = "OMG.KRW"
-            price = "3,610"
-            percent = "-3.19%"
-            tradeTotalCnt = "107백만"
+            coinNameEng = "OMG/KRW"
+            price = "1,460"
+            percent = "-1.35%"
+            tradeTotalCnt = "106백만"
             color = 0
             list.add(this)
         }
         DataSet().run {
-            coinNameKor = "이오스"
-            coinNameEng = "EOS/KRW"
-            price = "6,045"
-            percent = "-1.47%"
-            tradeTotalCnt = "7,783백만"
-            color = 0
+            coinNameKor = "트론"
+            coinNameEng = "TRX/KRW"
+            price = "15.1"
+            percent = "1.34%"
+            tradeTotalCnt = "5,270백만"
+            color = 1
             list.add(this)
         }
         DataSet().run {
             coinNameKor = "이더리움클래식"
             coinNameEng = "ETC/KRW"
-            price = "10,910"
-            percent = "-0.64%"
-            tradeTotalCnt = "925백만"
+            price = "4,225"
+            percent = "-2.87%"
+            tradeTotalCnt = "330백만"
             color = 0
             list.add(this)
         }
         DataSet().run {
             coinNameKor = "라이트코인"
             coinNameEng = "LTC/KRW"
-            price = "61,330"
-            percent = "2.28%"
-            tradeTotalCnt = "252백만"
+            price = "29,080"
+            percent = "1.93%"
+            tradeTotalCnt = "248백만"
             color = 1
             list.add(this)
         }
         DataSet().run {
-            coinNameKor = "에이다"
-            coinNameEng = "ADA/KRW"
-            price = "84"
-            percent = "60.68%"
-            tradeTotalCnt = "4,876백만"
+            coinNameKor = "스텔라루멘"
+            coinNameEng = "XLM/KRW"
+            price = "136"
+            percent = "3.82%"
+            tradeTotalCnt = "5,417백만"
             color = 1
             list.add(this)
         }
-        DataSet().run {
-            coinNameKor = "블록틱스"
-            coinNameEng = "TIX/KRW"
-            price = "233"
-            percent = "-0.87%"
-            tradeTotalCnt = "4,327백만"
-            color = 0
-            list.add(this)
-        }
-        DataSet().run {
-            coinNameKor = "골렘"
-            coinNameEng = "GNT/KRW"
-            price = "192"
-            percent = "-0.87%"
-            tradeTotalCnt = "94백만"
-            color = 0
-            list.add(this)
-        }
-        DataSet().run {
-            coinNameKor = "아더"
-            coinNameEng = "ARDR/KRW"
-            price = "123"
-            percent = "0.82%"
-            tradeTotalCnt = "90백만"
-            color = 1
-            list.add(this)
-        }
+//        DataSet().run {
+//            coinNameKor = "골렘"
+//            coinNameEng = "GNT/KRW"
+//            price = "76.7"
+//            percent = "2.95%"
+//            tradeTotalCnt = "160백만"
+//            color = 1
+//            list.add(this)
+//        }
+//        DataSet().run {
+//            coinNameKor = "아더"
+//            coinNameEng = "ARDR/KRW"
+//            price = "60.5"
+//            percent = "0.02%"
+//            tradeTotalCnt = "22백만"
+//            color = 1
+//            list.add(this)
+//        }
         DataSet().run {
             coinNameKor = "퀀텀"
             coinNameEng = "QTUM/KRW"
-            price = "4,340"
-            percent = "-1.92%"
-            tradeTotalCnt = "707백만"
-            color = 0
-            list.add(this)
-        }
-        DataSet().run {
-            coinNameKor = "네오"
-            coinNameEng = "NEO/KRW"
-            price = "17,830"
-            percent = "-2.14%"
-            tradeTotalCnt = "410백만"
-            color = 0
-            list.add(this)
-        }
-        DataSet().run {
-            coinNameKor = "그로스톨코인"
-            coinNameEng = "GRS/KRW"
-            price = "577"
-            percent = "-1.87%"
-            tradeTotalCnt = "437백만"
-            color = 0
-            list.add(this)
-        }
-        DataSet().run {
-            coinNameKor = "파워렛저"
-            coinNameEng = "POWR/KRW"
-            price = "181"
-            percent = "10.11%"
-            tradeTotalCnt = "364백만"
+            price = "1,800"
+            percent = "0.84%"
+            tradeTotalCnt = "556백만"
             color = 1
             list.add(this)
         }
-        DataSet().run {
-            coinNameKor = "비트코인골드"
-            coinNameEng = "BTG/KRW"
-            price = "30,240"
-            percent = "8.33%"
-            tradeTotalCnt = "139백만"
-            color = 1
-            list.add(this)
-        }
-        DataSet().run {
-            coinNameKor = "스토리지"
-            coinNameEng = "STORJ/KRW"
-            price = "357"
-            percent = "-4.05%"
-            tradeTotalCnt = "133백만"
-            color = 0
-            list.add(this)
-        }
-        DataSet().run {
-            coinNameKor = "디크레드"
-            coinNameEng = "DCR/KRW"
-            price = "45,830"
-            percent = "-3.19%"
-            tradeTotalCnt = "76백만"
-            color = 0
-            list.add(this)
-        }
+//        DataSet().run {
+//            coinNameKor = "파워렛저"
+//            coinNameEng = "POWR/KRW"
+//            price = "181"
+//            percent = "10.11%"
+//            tradeTotalCnt = "364백만"
+//            color = 1
+//            list.add(this)
+//        }
+//        DataSet().run {
+//            coinNameKor = "비트코인골드"
+//            coinNameEng = "BTG/KRW"
+//            price = "30,240"
+//            percent = "8.33%"
+//            tradeTotalCnt = "139백만"
+//            color = 1
+//            list.add(this)
+//        }
+//        DataSet().run {
+//            coinNameKor = "스토리지"
+//            coinNameEng = "STORJ/KRW"
+//            price = "357"
+//            percent = "-4.05%"
+//            tradeTotalCnt = "133백만"
+//            color = 0
+//            list.add(this)
+//        }
+//        DataSet().run {
+//            coinNameKor = "디크레드"
+//            coinNameEng = "DCR/KRW"
+//            price = "45,830"
+//            percent = "-3.19%"
+//            tradeTotalCnt = "76백만"
+//            color = 0
+//            list.add(this)
+//        }
         DataSet().run {
             coinNameKor = "지캐시"
             coinNameEng = "ZEC/KRW"

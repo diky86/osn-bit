@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:text="리플"/>
 
             <TextView
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:text="XRP/KRW"/>
         </LinearLayout>
 
@@ -48,7 +48,7 @@
             android:layout_marginRight="10dp"
             android:gravity="right"
             android:textColor="@color/red"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:text="504"/>
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_gravity="center"
             android:gravity="right"
             android:textColor="@color/red"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:text="8.62%"/>
 
         <TextView
@@ -70,7 +70,7 @@
             android:layout_gravity="center"
             android:gravity="right"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:text="115,672백만"/>
 
     </LinearLayout>
@@ -79,5 +79,5 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/line"/>
+        android:background="@color/lightgoldenrodyellow"/>
 </RelativeLayout>

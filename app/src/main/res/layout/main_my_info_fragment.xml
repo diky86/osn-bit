@@ -57,7 +57,7 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:textSize="17dp"
-                        android:text="garzar2018"/>
+                        android:text="bitflow-user"/>
 
                     <TextView
                         android:layout_width="80dp"
@@ -95,7 +95,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/navy"
                             android:textSize="23dp"
-                            android:text="4"/>
+                            android:text="1"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -175,7 +175,7 @@
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
                         android:layout_marginRight="15dp"
                         android:layout_alignParentRight="true"
@@ -188,7 +188,7 @@
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
@@ -201,7 +201,7 @@
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
@@ -231,7 +231,7 @@
                         android:layout_centerVertical="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:text="공지사항"/>
 
                     <ImageView
@@ -251,8 +251,8 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="[입출금] 원화 입금 일시 중단 안내 (10/21 00시 ~ 23시까지 중단할 것을 알려드립니다."/>
+                    android:textSize="15dp"
+                    android:text="[입출금] 입출금 정상 가능"/>
 
                 <View
                     android:id="@+id/line1"
@@ -271,8 +271,8 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="[점검] 알림톡 네트워크 장비 점검에 따른 인증번호 시스템이 일시 중단 될 수 있으니 양해바랍니다."/>
+                    android:textSize="15dp"
+                    android:text="[정기점검] 2019.5.20. AM 01:00 ~ 01:30 서비스 안정화 전검"/>
 
                 <View
                     android:id="@+id/line2"
@@ -291,8 +291,8 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="[이벤트] 엘프(ELF) 이벤트 : 입금 및 TOP 트레이더 수수료는 일시적으로 무료로 제공하오니 많은 참여 바랍니다."/>
+                    android:textSize="15dp"
+                    android:text="[이벤트] BFT 이벤트"/>
 
                 <View
                     android:id="@+id/line3"
@@ -311,8 +311,8 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="[암호화폐] 모나코(MCO) 리브랜딩 안내 (모나코 리브랜딩 안내해 드립니다.)"/>
+                    android:textSize="15dp"
+                    android:text="[암호화폐] OSN 상장 안내"/>
 
                 <View
                     android:id="@+id/line4"
@@ -331,7 +331,7 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
+                    android:textSize="15dp"
                     android:text="[점검 완료] 서버 점검 안내 (완료)"/>
 
             </RelativeLayout>
@@ -360,7 +360,7 @@
                         android:layout_centerVertical="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:textSize="15dp"
+                        android:textSize="20dp"
                         android:text="거래소 소식"/>
 
                     <ImageView
@@ -380,8 +380,8 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="[뉴스] 두나무, 싱가포르에 거래소 오픈 예정"/>
+                    android:textSize="15dp"
+                    android:text="[뉴스] 비트플로우 모바일 앱 오픈"/>
 
                 <View
                     android:id="@+id/news_line1"
@@ -400,8 +400,8 @@
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="[뉴스] 업비트, 상장 심사 원칙 공개"/>
+                    android:textSize="15dp"
+                    android:text="[뉴스] 1분기 실적 안내"/>
 
             </RelativeLayout>
 
@@ -424,7 +424,7 @@
                     android:layout_centerVertical="true"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="거래소 이용가이드"/>
 
                 <ImageView
@@ -447,7 +447,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="17dp"
                 android:text="고객센터"/>
 
             <View
@@ -463,7 +463,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="17dp"
                 android:text="약관 및 정책"/>
 
             <View
@@ -479,7 +479,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="17dp"
                 android:text="개인정보처리방침"/>
 
             <View
@@ -500,7 +500,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_centerVertical="true"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="17dp"
                     android:text="앱 버전"/>
 
                 <TextView
@@ -533,7 +533,7 @@
                     android:layout_centerVertical="true"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="로그아웃"/>
 
             </RelativeLayout>
